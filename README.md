@@ -1,23 +1,51 @@
-# Drake-AI
+# Song Generation with GPT-3.5-turbo
 
-Welcome to Drake-AI, a fine-tuned 3b parameter mini language model that spits heat like Drake! 🎤🔥
+This repository contains a Jupyter notebook (`Song Generation.ipynb`) for generating song lyrics using OpenAI's GPT-3.5-turbo model. The notebook utilizes the Hugging Face `transformers` library for interacting with the model and the `accelerate` library for training acceleration.
 
-## Overview
+## Prerequisites
 
-Drake-AI is a custom language model based on the powerful GPT-3.5 architecture by OpenAI. It has been fine-tuned with 3 billion parameters to capture the lyrical essence and style of the renowned artist Drake. Whether you're a fan of his music or just curious about generating text with a touch of Drake's flair, this model is here to bring the vibes.
+Before running the notebook, ensure that you have the required dependencies installed. You can install them using the following commands:
 
-## Features
+```bash
+!pip install -q -U bitsandbytes
+!pip install -q -U git+https://github.com/huggingface/transformers.git
+!pip install -q -U git+https://github.com/huggingface/peft.git
+!pip install -q -U git+https://github.com/huggingface/accelerate.git
+!pip install -q datasets openai
+```
 
-- **3 Billion Parameters:** Drake-AI is built on the GPT-3.5 architecture, utilizing a whopping 3 billion parameters for an enhanced language generation experience.
+Please note that there might be dependency conflicts, and you may need to resolve them based on the error messages.
 
-- **Drake's Style:** The model has been specifically fine-tuned to mimic the lyrical style of Drake, capturing his unique flow and wordplay.
+## Data Preparation
 
-- **Versatile Text Generation:** Use Drake-AI to generate lyrics, creative writing, or any text with a touch of Drake's artistic expression.
+The notebook downloads a dataset of Drake's lyrics from Kaggle using the Kaggle API. Make sure to provide your Kaggle API key and follow the instructions to secure it.
 
-## Getting Started
+## Data Processing and Prompt Generation
 
-To get started with Drake-AI, follow these steps:
+The notebook processes the downloaded lyrics data, removes empty entries, and generates prompts for each song using OpenAI's GPT-3.5-turbo model.
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your-username/Drake-AI.git
+## Loading Training Data
+
+The notebook loads additional training data from a Google Sheets CSV for fine-tuning the model.
+
+## Model Setup
+
+The notebook uses the `transformers` library to set up a GPT-3.5-turbo model for song generation. It also employs techniques such as gradient checkpointing and PEFT (Parameter Efficiency Training) for efficient training.
+
+## Tokenization and Dataset Preparation
+
+The notebook tokenizes the lyrics data, splits it into training and validation datasets, and prepares the data for training.
+
+## Model Training
+
+The GPT-3.5-turbo model is fine-tuned on the prepared dataset using the `DrakeTrainer` class, a custom trainer based on the `transformers` library.
+
+## Song Generation
+
+The notebook demonstrates song generation using prompts. It provides examples of generating lyrics based on a given prompt and showcases the generated results.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+Feel free to explore, experiment, and create your own songs using this notebook!
