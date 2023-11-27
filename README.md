@@ -2,6 +2,8 @@
 
 This repository contains a Jupyter notebook (`Song_Generation.ipynb`) for generating song lyrics using the dolly-v2-3b LLM. The notebook uses the Hugging Face `transformers` library for fine-tuning the model.
 
+**[Full Song](https://youtu.be/LeKcMHyd0m0)**
+
 ## Prerequisites
 
 Before running the notebook, ensure that you have the required dependencies installed. You can install them using the following commands:
