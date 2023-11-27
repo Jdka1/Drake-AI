@@ -40,6 +40,6 @@ The notebook demonstrates song generation using prompts. It provides examples of
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License.
 
 Feel free to explore, experiment, and create your own songs using this notebook!
