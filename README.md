@@ -1,6 +1,6 @@
-# Song Generation with GPT-3.5-turbo
+# Drake-AI
 
-This repository contains a Jupyter notebook (`Song Generation.ipynb`) for generating song lyrics using OpenAI's GPT-3.5-turbo model. The notebook utilizes the Hugging Face `transformers` library for interacting with the model and the `accelerate` library for training acceleration.
+This repository contains a Jupyter notebook (`Song Generation.ipynb`) for generating song lyrics using the dolly-v2-3b LLM. The notebook uses the Hugging Face `transformers` library for fine-tuning the model.
 
 ## Prerequisites
 
@@ -11,7 +11,7 @@ Before running the notebook, ensure that you have the required dependencies inst
 !pip install -q -U git+https://github.com/huggingface/transformers.git
 !pip install -q -U git+https://github.com/huggingface/peft.git
 !pip install -q -U git+https://github.com/huggingface/accelerate.git
-!pip install -q datasets openai
+!pip install -q datasets
 ```
 
 Please note that there might be dependency conflicts, and you may need to resolve them based on the error messages.
@@ -26,19 +26,11 @@ The notebook processes the downloaded lyrics data, removes empty entries, and ge
 
 ## Loading Training Data
 
-The notebook loads additional training data from a Google Sheets CSV for fine-tuning the model.
-
-## Model Setup
-
-The notebook uses the `transformers` library to set up a GPT-3.5-turbo model for song generation. It also employs techniques such as gradient checkpointing and PEFT (Parameter Efficiency Training) for efficient training.
-
-## Tokenization and Dataset Preparation
-
-The notebook tokenizes the lyrics data, splits it into training and validation datasets, and prepares the data for training.
+The notebook then loads the training data from a Google Sheets CSV that I have publicly postest for fine-tuning the model.
 
 ## Model Training
 
-The GPT-3.5-turbo model is fine-tuned on the prepared dataset using the `DrakeTrainer` class, a custom trainer based on the `transformers` library.
+The model is fine-tuned on the prepared dataset using the `DrakeTrainer` class, a custom trainer based on the `transformers` library.
 
 ## Song Generation
 
