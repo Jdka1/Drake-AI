@@ -1,6 +1,6 @@
 # Drake-AI
 
-<img src="{https://tinyurl.com/2p9ft7xf}" />
+<img src="{https://camo.githubusercontent.com/c037abc7116a4624e6d6569e3d2a774ca08e12983c724314def56103f93e6708/68747470733a2f2f74696e7975726c2e636f6d2f3270396674377866}" />
 
 
 This repository contains a Jupyter notebook (`Song_Generation.ipynb`) for generating song lyrics using the dolly-v2-3b LLM. The notebook uses the Hugging Face `transformers` library for fine-tuning the model. 
