@@ -10,7 +10,7 @@ Everything is 100% free to replicate using google colab compute and [this](https
 **[Full Song](https://youtu.be/LeKcMHyd0m0)**
 
 ## Future Work
- - Using a model that is trained on singing/rapping vocal data rather than plain voice data to improve the flow of the AI generated voice.
+ - [ ] Using a model that is trained on singing/rapping vocal data rather than plain voice data to improve the flow of the AI generated voice.
 
 ## Prerequisites
 
