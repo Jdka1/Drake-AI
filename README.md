@@ -3,9 +3,11 @@
 <img src="https://tinyurl.com/2p9ft7xf" /> <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" />
 
 
-This repository is a documentation of a research project I did into AI safety in imitating music artists, and cointains a Jupyter notebook (`Song_Generation.ipynb`) for generating song lyrics using the dolly-v2-3b LLM. The notebook uses the Hugging Face `transformers` library for fine-tuning the model. 
+This repository is a documentation of a research project I did into AI safety in imitating music artists, and cointains a Jupyter notebook (`Song_Generation.ipynb`) for generating song lyrics using the dolly-v2-3b LLM. The notebook uses the Hugging Face `transformers` library for fine-tuning the model.
 
 Everything is 100% free to replicate using google colab compute and [this](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjn49YWFG5pzoXyw7f4IU2TXw0vu0pCjHWc3k9qbd9MSADgr4SoGTljMKPblRWYo9xsAjOXD7ytUff/pub?output=csv) dataset created. 💯
+
+**Future Work:** Using a model that is trained on singing/rapping vocal data rather than plain voice data to improve the flow of the AI generated voice.
 
 **[Full Song](https://youtu.be/LeKcMHyd0m0)**
 
