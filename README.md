@@ -7,9 +7,10 @@ This repository is a documentation of a research project I did into AI safety in
 
 Everything is 100% free to replicate using google colab compute and [this](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjn49YWFG5pzoXyw7f4IU2TXw0vu0pCjHWc3k9qbd9MSADgr4SoGTljMKPblRWYo9xsAjOXD7ytUff/pub?output=csv) dataset created. 💯
 
-**Future Work:** Using a model that is trained on singing/rapping vocal data rather than plain voice data to improve the flow of the AI generated voice.
-
 **[Full Song](https://youtu.be/LeKcMHyd0m0)**
+
+## Future Work
+ - Using a model that is trained on singing/rapping vocal data rather than plain voice data to improve the flow of the AI generated voice.
 
 ## Prerequisites
 
