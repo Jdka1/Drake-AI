@@ -2,6 +2,7 @@
 
 <img src="https://tinyurl.com/2p9ft7xf" /> <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" />
 
+**[Project Explaination](https://flip.com/s/3nvYbcZU1D4a)
 
 This repository is a documentation of a research project I did into AI safety in imitating music artists, and cointains a Jupyter notebook (`Song_Generation.ipynb`) for generating song lyrics using the dolly-v2-3b LLM. The notebook uses the Hugging Face `transformers` library for fine-tuning the model.
 
